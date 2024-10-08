@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects - win64's website</title>
+  <link rel="icon" type="image/png" href="imgs/fav.png">
+  <style>
+    body {
+      margin: 0;
+      font-family: "Segoe UI Variable Display", sans-serif;
+      background-image: url('imgs/img19.png');
+      background-size: cover;
+      background-position: center;
+      filter: blur(55%);
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    /* Taskbar styling */
+    .taskbar {
+      display: flex;
+      align-items: center;
+      padding: 10px 20px;
+      background: rgba(0, 0, 0, 0.6);
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+      box-sizing: border-box;
+      justify-content: center;
+    }
+
+    .taskbar .logo-title {
+      display: flex;
+      align-items: center;
+      flex-grow: 1;
+    }
+
+    .taskbar img {
+      width: 30px;
+      height: 30px;
+      margin-right: 10px;
+    }
+
+    .taskbar .title {
+      color: #fff;
+      font-size: 18px;
+      margin: 0;
+    }
+
+    .taskbar nav {
+      display: flex;
+      gap: 20px;
+      margin-left: 20px;
+    }
+
+    .taskbar nav a {
+      text-decoration: none;
+      padding: 10px 20px;
+      background-color: rgba(255, 255, 255, 0.1);
+      color: #fff;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 5px;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .taskbar nav a:hover {
+      background-color: rgba(255, 255, 255, 0.2);
+      color: #ff9100;
+    }
+
+    /* Main content styling */
+    .content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: calc(100vh - 50px);
+      text-align: center;
+      position: relative;
+      z-index: 1;
+      margin-top: 50px;
+    }
+
+    .content h1 {
+      color: #fff;
+      font-size: 3em;
+      margin-bottom: 20px;
+    }
+
+    /* Card container */
+    .projects {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    /* Card styling */
+    .card {
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      padding: 20px;
+      border-radius: 10px;
+      width: 400px;
+      transition: transform 0.3s ease, opacity 0.3s ease;
+      color: #fff;
+      text-align: left;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+      opacity: 0.75;
+    }
+
+    .card h3 {
+      margin-top: 0;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      margin-bottom: 20px;
+    }
+
+    .card a {
+      text-decoration: none;
+      padding: 10px 20px;
+      background-color: rgba(255, 255, 255, 0.1);
+      color: #fff;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 5px;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .card a:hover {
+      background-color: rgba(255, 255, 255, 0.2);
+      color: #ff9100;
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- Top Taskbar -->
+  <div class="taskbar">
+    <div class="logo-title">
+      <a href="index.html">
+        <img src="imgs/fav.png" alt="win64's pfp :3">
+      </a>
+      <span class="title">win64's website</span>
+    </div>
+    <nav>
+      <a href="projects.html">Projects</a>
+      <a href="https://discord.com/invite/NEkfvzkbdA" target="_blank">Discord</a>
+      <a href="https://youtube.com/@userwin64" target="_blank">YouTube</a>
+    </nav>
+  </div>
+
+  <!-- Main Content -->
+  <div class="content">
+    <h1>Projects</h1>
+    <div class="projects">
+      <!-- Windows 10 Sun Valley Project -->
+      <div class="card">
+        <h3>Windows 10 Sun Valley</h3>
+        <p>Aims to restore the original look of Sun Valley before June 15/24 2021, while also bringing consistency and bringing back old CPL applets.</p>
+        <a href="https://windows10sunvalley.is-a.dev" target="_blank">Website</a>
+      </div>
+
+      <!-- Windows Command Interpreter Project -->
+      <div class="card">
+        <h3>Windows Command Interpreter</h3>
+        <p>A Discord bot coded in Nextcord, for fun and moderation.</p>
+        <a href="https://github.com/userwin64/windows-command-interpreter-bot" target="_blank">Source Code</a>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

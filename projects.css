@@ -1,17 +1,12 @@
-@font-face {
-  font-family: "Google Sans";
-  src: url("fonts/googlesans.woff2") format('woff2');
-}
-
 body {
     margin: 0;
-    font-family: "Google Sans", sans-serif;
+    font-family: "Segoe UI Variable Display", sans-serif;
     background-image: url('imgs/img19.png');
     background-size: cover;
     background-position: center;
     filter: blur(55%);
-    min-height: 100vh;
-}
+    min-height: 100vh; /* Set minimum height to allow scrolling */
+  }
 
 .taskbar {
   position: fixed;

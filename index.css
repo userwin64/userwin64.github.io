@@ -39,7 +39,7 @@ body {
   color: #fff;
   font-size: 18px;
   margin: 0;
-  font-family: "Google Sans", sans-serif;
+  font-family: "Segoe UI Variable Display", sans-serif;
   font-weight: 700;
   font-style: normal;
 }
@@ -57,7 +57,7 @@ body {
   color: #fff;
   border: 1px solid rgba(255, 255, 255, 0.2);
   transition: background-color 0.3s ease, color 0.3s ease;
-  font-family: "Google Sans", sans-serif;
+  font-family: "Segoe UI Variable Display", sans-serif;
   font-weight: 550;
   font-style: normal;
   overflow: auto;

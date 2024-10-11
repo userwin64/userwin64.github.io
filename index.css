@@ -10,10 +10,9 @@ body {
     background-size: cover;
     background-position: center;
     filter: blur(55%);
-    min-height: 100vh; /* Set minimum height to allow scrolling */
+    min-height: 100vh;
 }
 
-/* Taskbar styling */
 .taskbar {
   position: fixed;
   top: 0;
@@ -33,7 +32,7 @@ body {
 .taskbar .logo-title {
   display: flex;
   align-items: center;
-  flex-grow: 1; /* Allow the logo-title to take up available space */
+  flex-grow: 1;
 }
 
 .taskbar img {
@@ -53,10 +52,9 @@ body {
 .taskbar nav {
   display: flex;
   gap: 20px;
-  margin-left: 20px; /* Add some space between the title and the navigation */
+  margin-left: 20px;
 }
 
-/* Button styling */
 .taskbar nav button {
   text-decoration: none;
   display: flex;

@@ -10,7 +10,7 @@ body {
     background-size: cover;
     background-position: center;
     filter: blur(55%);
-    min-height: 100vh; /* Set minimum height to allow scrolling */
+    min-height: 100vh;
 }
 
 .taskbar {
@@ -83,8 +83,6 @@ body {
   color: #077026;
 }
 
-
-/* Main content styling */
 .content {
   display: flex;
   flex-direction: column;
@@ -103,7 +101,6 @@ body {
   margin-bottom: 20px;
 }
 
-/* Card container */
 .projects {
   display: flex;
   flex-direction: column;

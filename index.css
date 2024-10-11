@@ -1,11 +1,11 @@
 @font-face {
-  font-family: "Segoe UI Variable";
-  src: url("fonts/SegUIVar.woff2") format('woff2');
+  font-family: "Google Sans";
+  src: url("fonts/googlesans.woff2") format('woff2');
 }
 
 body {
     margin: 0;
-    font-family: "Segoe UI Variable", sans-serif;
+    font-family: "Google Sans", sans-serif;
     background-image: url('imgs/img19.png');
     background-size: cover;
     background-position: center;

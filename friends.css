@@ -10,10 +10,9 @@ body {
     background-size: cover;
     background-position: center;
     filter: blur(55%);
-    min-height: 100vh; /* Set minimum height to allow scrolling */
+    min-height: 100vh;
 }
 
-/* Taskbar styling */
 .taskbar {
   position: fixed;
   top: 0;
@@ -84,13 +83,12 @@ body {
   color: #077026;
 }
 
-/* Main content styling */
 .content {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: calc(100vh - 50px); /* Adjust for taskbar */
+  min-height: calc(100vh - 50px);
   text-align: center;
   position: relative;
   z-index: 1;
@@ -103,14 +101,12 @@ body {
   margin-bottom: 20px;
 }
 
-/* Friends card container */
 .friends {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
 
-/* Card styling */
 .card {
   background: rgba(255, 255, 255, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.2);

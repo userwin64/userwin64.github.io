@@ -6,6 +6,14 @@
   <title>win64's website</title>
   <link rel="icon" type="image/png" href="imgs/fav.png">
   <link rel="stylesheet" href="index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <script>
+    function newtab(url) {
+    window.open(url);
+    }
+  </script>
 </head>
 <body>
 
@@ -13,25 +21,36 @@
   <div class="taskbar">
     <div class="logo-title">
       <a href="index.html">
-        <img src="imgs/fav.png" alt="win64's pfp :3">
+        <img id="icon" src="imgs/fav.png" alt="win64's pfp :3">
       </a>
       <span class="title">win64's website</span>
     </div>
-    <nav>
-      <a href="projects.html">Projects</a>
-      <a href="friends.html">Friends</a>
-      <a href="mailto:win64inquiries@gmail.com">Mail me!</a>
-      <a href="https://github.com/userwin64" target="_blank">GitHub</a>
-      <a href="https://discord.com/invite/NEkfvzkbdA" target="_blank">Discord</a>
-      <a href="https://youtube.com/@userwin64" target="_blank">YouTube</a>
+    <nav id="buttonsdiv">
+      <button class="button" onclick="newtab('projects.html')">Projects</button>
+      <button class="button" onclick="newtab('friends.html')">Friends</button>
+      <button class="button" onclick="newtab'(mailto\:win64inquiries@gmail.com)">Mail me!</button>
+      <button class="button" onclick="newtab('https\://github.com/userwin64')" target="_blank">GitHub</button>
+      <button class="button" onclick="newtab('https\://discord.com/invite/NEkfvzkbdA"')" target="_blank">Discord</button>
+      <button class="button" onclick="newtab('https\://youtube.com/@userwin64')" target="_blank">YouTube</button>
     </nav>
+    <script>
+      button = document.getElementById('buttonsdiv')
+      if (window.innerWidth < 768) {
+        button.style.overflow = "scroll";
+      } else {
+        button.style.overflow = "hidden";
+      }
+    </script>
   </div>
 
   <!-- Main Content -->
-  <div class="content">
-    <h1>Hello! I'm win64.</h1>
-    <p>I am a tech YouTuber that does tech experiments, mapping, and fun! I like to code in Batch, VBS, and Python.</p>
-    <h3>Find more about me and even contact me by looking at the top right corner :3</h3>
+  <div class="square">
+    <section>
+      <h1>Hello! I'm win64.</h1>
+      <br>
+      <p>I am a tech YouTuber that does tech experiments, mapping, and fun! I like to code in Batch, VBS, and Python.</p>
+      <h3>Find more about me and even contact me by looking at the top right corner :3</h3>
+    </section>
   </div>
 
 </body>

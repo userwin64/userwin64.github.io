@@ -13,7 +13,11 @@
   <link rel="stylesheet" href="friends.css">
   <script>
     function newtab(url) {
-      window.location.href = url;
+      window.open(url, '_blank'); // Open external links in a new tab
+    }
+
+    function sendMail() {
+      window.location.href = 'mailto:win64inquiries@gmail.com'; // Email link
     }
   </script>
 </head>
@@ -28,19 +32,11 @@
     <nav id="buttonsdiv">
       <button class="button" onclick="newtab('projects.html')">Projects</button>
       <button class="button" onclick="newtab('friends.html')">Friends</button>
-      <button class="button" onclick="newtab('mailto\:win64inquiries@gmail.com)">Mail me!</button>
-      <button class="button" onclick="newtab('https\://github.com/userwin64')" target="_blank">GitHub</button>
-      <button class="button" onclick="newtab('https\://discord.com/invite/NEkfvzkbdA"')" target="_blank">Discord</button>
-      <button class="button" onclick="newtab('https\://youtube.com/@userwin64')" target="_blank">YouTube</button>
+      <button class="button" onclick="sendMail()">Mail me!</button> <!-- Fixed email -->
+      <button class="button" onclick="newtab('https://github.com/userwin64')">GitHub</button> <!-- Fixed GitHub URL -->
+      <button class="button" onclick="newtab('https://discord.com/invite/NEkfvzkbdA')">Discord</button> <!-- Fixed Discord URL -->
+      <button class="button" onclick="newtab('https://youtube.com/@userwin64')">YouTube</button> <!-- Fixed YouTube URL -->
     </nav>
-    <script>
-      button = document.getElementById('buttonsdiv')
-      if (window.innerWidth < 768) {
-        button.style.overflow = "scroll";
-      } else {
-        button.style.overflow = "hidden";
-      }
-    </script>
   </div>
 
   <div class="content">
@@ -80,13 +76,6 @@
         <p>"mmmmeeeeeee nooooooooooot knooooooooooooow"</p>
       </div>
     </div>
-    <script>
-      var cards = document.getElementsByClassName('card');
-      for (let i = 0; i < cards.length; i++) {
-        cards[i].style.width = window.innerWidth / 2 + 'px';
-        cards[i].style.height = window.innerHeight / 10 + 'px';
-      }
-    </script>
   </div>
 
 </body>

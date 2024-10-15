@@ -61,7 +61,33 @@
     font-weight: 700;
     font-style: normal;
   }
-
+  .taskbar nav button {
+    text-decoration: none;
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-family: "Segoe UI Variable Display", "Roboto";
+    font-weight: 550;
+    font-style: normal;
+    overflow: auto;
+    display: flex;
+    margin: auto;
+    white-space: pre;
+    overflow: auto;
+    display: flex;
+    margin: auto;
+    max-width: 100px;
+    max-height: 50px;
+    padding: 10px 20px;
+    border-radius: 8px;
+    margin-left: 10px;
+  }
+  .taskbar nav button:hover {
+    color: rgba(255, 255, 255, 0.2);
+    color: #077026;
+  }
   .square {
     display: flex;
     padding: 20px;
@@ -86,11 +112,11 @@
     text-align: center;
   }
 
-    .square h1 {
+  .square h1 {
      color: red;
   }
 
-    .square p {
+  .square p {
      color: white;
      font-family: "Segoe UI Variable Display", "Roboto";
      font-weight: 300;

@@ -1,2 +1,2 @@
 # win64's website
-source code for my website :3
+Source code for my website :3
